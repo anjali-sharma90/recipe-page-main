@@ -1,0 +1,9 @@
+@mixin tablecontent {
+  height: 24px;
+  width: 288px;
+}
+
+@mixin liststructure {
+  display: flex;
+  gap: 16px;
+}

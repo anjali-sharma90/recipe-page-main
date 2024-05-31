@@ -1,0 +1,120 @@
+.imgcontainer {
+  /* Desktop styles */
+  @media (min-width: 736px) {
+    margin-top: 40px;
+  }
+}
+.img {
+  height: 171px;
+  width: 375px;
+
+  /* Desktop styles */
+  @media (min-width: 736px) {
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+.recipe {
+  &__text {
+    color: $color-secondary;
+  }
+}
+
+.preparation {
+  background-color: $color-tertiary;
+  padding: 24px;
+  border-radius: 12px;
+
+  &__heading {
+    color: $color-primary-maroon;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &__list {
+    @include liststructure;
+    align-items: center;
+  }
+}
+
+.list {
+  @include liststructure;
+  flex-direction: column;
+  padding-left: 8px;
+  color: $color-secondary;
+  list-style-type: none;
+  text-transform: capitalize;
+
+  &-dot {
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background-color: $color-primary-maroon;
+  }
+
+  &__text-bold {
+    color: $color-secondary;
+    text-transform: capitalize;
+  }
+}
+
+.ingredients {
+  margin-top: 32px;
+
+  &__list-text {
+    color: $color-secondary;
+    list-style-type: none;
+    text-transform: capitalize;
+  }
+
+  &__list {
+    @include liststructure;
+    align-items: center;
+  }
+}
+
+.instructions {
+  margin-bottom: 32px;
+
+  &__list {
+    @include liststructure;
+    padding-left: 0;
+    color: $color-secondary;
+    margin-bottom: 8px;
+    list-style-type: none;
+    text-transform: capitalize;
+  }
+
+  &__number {
+    display: inline-block;
+    color: $color-primary;
+  }
+}
+
+.nutrition {
+  margin-top: 32px;
+  &__text {
+    margin-bottom: 24px;
+    color: $color-secondary;
+  }
+
+  &__table-content {
+    display: flex;
+    column-gap: 16px;
+    padding: 0px 0px 0px 32px;
+    margin: 12px 0px 12px 0px;
+  }
+
+  &__calories {
+    color: $color-secondary;
+    @include tablecontent;
+  }
+
+  &__value {
+    color: $color-primary;
+    @include tablecontent;
+  }
+}

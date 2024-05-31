@@ -1,0 +1,19 @@
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+
+  /* Desktop styles */
+  @media (min-width: 736px) {
+    max-width: 656px;
+    margin: 0 auto;
+  }
+}
+
+.sub-container {
+  margin: 40px 32px 40px 32px; /* top right bottom left */
+
+  /* Desktop styles */
+  @media (min-width: 736px) {
+    margin: 0px; /* top right bottom left */
+  }
+}
